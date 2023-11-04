@@ -242,4 +242,122 @@ footer{
     padding: 70px 0;
     height: 525px;
     background-color: #4C4C4C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* footer left */
+
+footer a{
+    color: white;
+}
+
+#footer-section{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2.5rem;
+}
+
+.footer-left-button{
+    width: 28rem;
+    height: 4.5rem;
+    text-align: center;
+    line-height: 4.5rem;
+    background-color: var(--main-color);
+}
+
+.footer-left-button a{
+    color: white;
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+
+
+
+
+/* footer right */
+
+
+/* footer right top */
+.footer-right-top{
+    display: flex;
+}
+
+.footer-right-top ul{
+    width: 250px;
+    line-height: 1.6;
+    padding: 0 3.5rem;
+}
+
+.footer-right-top a{
+    font-size: 2rem;
+    font-weight: 600;   
+    /* padding-bottom: 3rem; */
+}
+
+.footer-right-top li{
+    font-size: 1.6rem;
+    color: #c4c4c4;
+}
+
+
+/* footer right bottom */
+.footer-right-bottom{
+    padding: 0 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-right-bottom h4{
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.footer-social{
+    display: flex;
+}
+
+.footer-social img{
+    margin-right: 8px;
+}
+
+.email-input{
+    width: 180px;
+    height: 35px;
+    padding-left: 15px;
+}
+
+.confirm-button{
+    margin-left: 5px;
+    width: 50px;
+    height: 35px;
+    background-color: #303030;
+    text-align: center;
+    line-height: 45px;
+}
+
+#footer-logo{
+    margin: 3.5rem 9rem 0 0;
+}
+
+#footer-copyright{
+    margin-top: 3rem;
+    width: 640px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bo-cong-thuong{
+    width: 185px;
+    height: 75px;
+}
+
+#copyright-text{
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    color: #8F8F8F;
 }
