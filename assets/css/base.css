@@ -1,7 +1,9 @@
 :root{
-    --main-color: #1E5128;
+    --main-color: #F15E2C;
     --text-color: #333;
-    --white-color: #fff;
+    --separate-color: #E3E2E2;
+    --line-color: #66AFE9;
+    --small-text-color: #303030;
 }
 
 * {
@@ -11,7 +13,23 @@
 html{
     font-size: 62.5%;
     line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+input{
+    border: none;
+    outline: none;
 }
 
 .grid{
