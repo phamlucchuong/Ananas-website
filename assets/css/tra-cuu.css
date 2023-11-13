@@ -1,0 +1,28 @@
+#tra-cuu{
+    width: 780px;
+    margin: 50px calc((100% - 780px) / 2);
+}
+#tra-cuu h2{
+    font-size: 28px;
+    text-align: center;
+}
+#email-container{
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+}
+#email-container input{
+    flex-grow: 1;
+    border: 1px solid #c7c7c7;
+    height: 30px;
+    margin: 30px 0 10px;
+    font-size: 15px;
+    padding-left: 15px;
+}
+#tra-cuu-btn{
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    padding: 8px 35px;
+    background-color: var(--main-color);
+}

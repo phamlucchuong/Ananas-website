@@ -31,6 +31,10 @@ header{
     margin: 3px 10px 0;
 }
 
+.nav-item a{
+    color: white;
+}
+
 
 
 /* tạo header menu */
@@ -203,6 +207,7 @@ aside{
     position: fixed;
     top: 220px;
     right: 0;
+    z-index: 1000;
 }
 
 .side-right{
