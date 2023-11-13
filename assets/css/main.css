@@ -317,6 +317,10 @@ aside{
     color: white;
 }
 
+.item-group a{
+    color: white;
+}
+
 .item-group-3{
     position: absolute;
     top: 4rem;
