@@ -234,9 +234,19 @@ aside{
     margin-top: 25px;
 }
 
-#top-title{
+.top-title{
     width: 100%;
     background-color: #F1F1F1;
+    transition: left 0.5s ease-in-out;
+    white-space: nowrap;
+}
+.announcement-text{
+    cursor: pointer;
+    color: #242424;
+    font-style: italic;
+}
+.top-title.active{
+    left: 0;
 }
 
 .header{
