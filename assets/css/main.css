@@ -46,6 +46,7 @@ header{
 
 .menu ul{
     padding: 0 1rem 0 6.5rem;
+    display: flex;
     justify-content: space-between;
 }
 
