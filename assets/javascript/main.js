@@ -1,58 +1,73 @@
-
 document.addEventListener('DOMContentLoaded', function () {
-    const announcementBar = document.querySelector('.top-title');
-    const nextButton = document.querySelector('.next-button');
+    const announcementBar = document.querySelector('.header');
+    const announcementText = document.querySelector('.announcement-text');
     const prevButton = document.querySelector('.prev-button');
+    const nextButton = document.querySelector('.next-button');
 
-    function showAnnouncement() {
-        announcementBar.classList.add('active');
-        setTimeout(hideAnnouncement, 2000); // Ẩn thanh thông báo sau 2 giây
-    }
-
-    function hideAnnouncement() {
-        announcementBar.classList.remove('active');
-        // Không cần setTimeout ở đây vì sẽ được gọi ngay lập tức khi ẩn
-        showNextAnnouncement();
-    }
-
-    let announ = [
+    let announcements = [
+        'FREE SHIPPING VỚI HÓA ĐƠN TỪ 900K!',
         'HÀNG 2 TUẦN NHẬN ĐỔI, GIÀY NỮA NĂM BẢO HÀNH',
         'BUY MORE PAY LESS - ÁP DỤNG KHI MUA PHỤ KIỆN',
         'BUY 2 GET 10% OFF - ÁP DỤNG VỚI TẤT CẢ BASIC TEE',
-        'FREE SHIPPING VỚI HÓA ĐƠN TỪ 900K!'
     ];
 
     let currentIndex = 0;
 
-    function showNextAnnouncement() {
-        announcementBar.querySelector('.announcement-text').textContent = announ[currentIndex];
-        // Hiển thị thanh thông báo mới
-        showAnnouncement();
+    function showAnnouncement() {
+        announcementText.textContent = announcements[currentIndex];
     }
-    let i = 0;
 
-    function showPrevAnnouncement() {
-        currentIndex = (currentIndex - 1 + announ.length) % announ.length;
-        announcementBar.querySelector('.announcement-text').textContent = announ[currentIndex];
-        // Hiển thị thanh thông báo mới
-        i = (i + 1) % announ.length;
-        if(i==4){
-            i = 0;
-        }
+    function nextAnnouncement() {
+        currentIndex = (currentIndex + 1) % announcements.length;
         showAnnouncement();
     }
 
-    // Bắt đầu hiển thị thanh thông báo
+    function prevAnnouncement() {
+        currentIndex = (currentIndex - 1 + announcements.length) % announcements.length;
+        showAnnouncement();
+    }
+
+    function autoRotateAnnouncement() {
+        nextAnnouncement();
+        setTimeout(autoRotateAnnouncement, 5000); // Chuyển đổi sau mỗi 5 giây
+    }
+
+    // Bắt đầu hiển thị thanh thông báo và tự động chuyển đổi
     showAnnouncement();
+    setTimeout(autoRotateAnnouncement, 5000);
 
     // Bắt sự kiện khi bấm nút "Next"
     nextButton.addEventListener('click', function () {
-        currentIndex = (currentIndex + 1) % announ.length;
-        showNextAnnouncement();
+        nextAnnouncement();
     });
 
     // Bắt sự kiện khi bấm nút "Prev"
     prevButton.addEventListener('click', function () {
-        showPrevAnnouncement();
+        prevAnnouncement();
     });
 });
+
+
+function changeImage(newImage) {
+    var mainImage = document.getElementById('mainImage');
+    mainImage.src = newImage;
+}
+
+
+function toggleSizeDropdown() {
+    var sizeDropdown = document.getElementById('sizeDropdown');
+    if (sizeDropdown.style.display === 'block') {
+        sizeDropdown.style.display = 'none';
+    } else {
+        sizeDropdown.style.display = 'block';
+    }
+}
+
+function toggleSlDropdown() {
+    var sizeDropdown = document.getElementById('slDropdown');
+    if (sizeDropdown.style.display === 'block') {
+        sizeDropdown.style.display = 'none';
+    } else {
+        sizeDropdown.style.display = 'block';
+    }
+}

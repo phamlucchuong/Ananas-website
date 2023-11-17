@@ -1,0 +1,217 @@
+#san-pham-info{
+    margin: 20px 80px;
+}
+#sp-name{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    border-bottom: 3px solid black;
+}
+.separate{
+    margin-right: 10px;
+}
+#sp-info{
+    margin-top: 30px;
+    display: flex;
+}
+#sp-img{
+    margin-right: 60px;
+}
+#sp-img img{
+    cursor: pointer;
+}
+#mainImage{
+    margin-bottom: 10px;
+    width: 640px;
+    height: 640px;
+}
+#sp-img-bottom img{
+    width: 158px;
+    height: 158px;
+}
+#sp-ten{
+    margin: 0;
+    font-size: 28px;
+    line-height: 1.6;
+}
+#sp-dathang p{
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+#sp-dathang span b{
+    font-size: 21px;
+}
+.sp-p{
+    padding-bottom: 30px;
+    border-bottom: 2px dashed #9b9b9b;
+}
+.sp-p2 span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #e2e2e2;
+    margin: 30px 5px 0;
+    cursor: pointer;
+}
+#size-sl{
+    display: flex;
+}
+.size{
+    position: relative;
+}
+.size + .size{
+    margin-left: 30px;
+}
+.size p{
+    font-size: 20px !important;
+    font-weight: bolder;
+}
+.size-btn{
+    margin-top: -15px;
+    width: 220px;
+    height: 35px;
+    position: relative;
+    border: 1px solid #a8a8a8;
+    cursor: pointer;
+}
+.size-btn i{
+    font-size: 16px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+#sizeDropdown, #slDropdown{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+#sizeDropdown ul, #slDropdown ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    background-color: white;
+    border: 1px solid #333;
+    padding: 10px;
+}
+#sizeDropdown ul li, #slDropdown ul li{
+    border-collapse: collapse;
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 45px;
+    border: 1px solid #707070;
+    cursor: pointer;
+}
+#sp-add{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+#sp-add span{
+    padding: 25px 75px;
+    background-color: black;
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+}
+#sp-add img{
+    padding: 18px 30px;
+    background-color: black;
+}
+#sp-add-left:active, #sp-add-right:active, #thanh-toan:active{
+    opacity: 0.5;
+}
+
+#thanh-toan{
+    display: inline-block;
+    font-size: 23px !important;
+    width: 100%;
+    height: 65px;
+    background-color: var(--main-color);
+    text-align: center;
+    line-height: 65px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#thong-tin{
+    font-size: 23px !important;
+    font-weight: 600;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+.t-t{
+    font-size: 23px !important;
+    font-weight: 600;
+    margin: 30px 0 0;
+    cursor: pointer;
+}
+
+
+/*  */
+#sp-lien-quan, #sp-da-xem{
+    margin: 60px 80px;
+    text-align: center;
+}
+#sp-lien-quan h2, #sp-da-xem h2{
+    font-size: 25px;
+}
+
+.selling-list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.selling-item{
+    width: 280px;
+    height: 350px;
+    padding: 0 10px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.thumbnail{
+    text-align: center;
+}
+.cont-item{
+    width: 280px;
+    height: 280px;
+    position: relative;
+    cursor: pointer;
+}
+.item-img{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.heart{
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    bottom: 12px;
+}
+
+.caption{
+    margin: 0;
+}
+.item-name, .item-album, .item-price{
+    font-size: 16px;
+}
+.item-name, .item-price{
+    font-weight: 600;
+}
+.item-name{
+    cursor: pointer;
+    line-height: 1.3;
+}
+.item-name:hover{
+    color: var(--main-color);
+}
