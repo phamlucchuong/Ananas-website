@@ -42,7 +42,7 @@
                 </li>
                 <li class="nav-item">
                     <img src="./assets/images/header-navigation-svg/icon gio hang.svg" alt="icon giỏ hàng">
-                    <p><a class="highlight" href="./gio-hang.html">Giỏ hàng (0)</a></p>
+                    <p><a class="highlight" href="./gio-hang.html">Giỏ hàng (1)</a></p>
                 </li>
             </ul>
         <div/>
@@ -211,10 +211,30 @@
 
             <aside>
                 <ul>
-                    <li class="side-right side-cart">
-                        <span>0</span>
+                    <li class="side-right side-cart" onclick="cartOnclick()">
+                        <span>1</span>
                         <img src="./assets/images/header-navigation-svg/icon gio hang.svg" alt="icon giỏ hàng">
+    
+                        <div id="cart-onclick">
+                            <h4>Giỏ hàng (1)</h4>
+                            <div class="cart-sp">
+                                <img src="./assets/images/sp/Pro_AV00181_1.jpeg" alt="">
+                                <div class="cart-name">
+                                    <p style="font-size: 13px; font-weight: 600;">PATTAS TOMO - MULE - PRIMROSE YELLOW</p>
+                                    <p style="font-size: 12px;">720.000 VNĐ</p>
+                                    <p class="small">Size: <span>39</span></p>
+                                    <p class="small">Số lượng: <span>1</span></p>
+                                </div>
+                            </div>
+                            <div class="cart-price">
+                                <span>Tổng cộng</span>
+                                <span style="color: var(--main-color);">720.000 VNĐ</span>
+                            </div>
+                            <span class="cart-btn">THANH TOÁN</span>
+                            <span class="cart-btn cart-yeu-thich">THÊM VÀO YÊU THÍCH</span>
+                        </div>
                     </li>
+                    
                     <li class="side-right side-contact">
                         <div>
                             <img src="./assets/images/main svg/icon facebook 2.svg" alt="icon fb 2">
@@ -237,11 +257,80 @@
                 </div>
             </section>
 
-            <section id="yeu-thich">
-                <h3>GIỎ HÀNG CỦA BẠN</h3>
-                <p>Bạn đang không có sản phẩm nào trong giỏ hàng!</p>
-                <a href="./product.html">TIẾP TỤC MUA HÀNG</a>
+            <section id="gio-hang-cua-ban">
+
+                <div class="gh">
+                    <div class="gio-hang-left">
+                        <h3>GIỎ HÀNG</h3>
+                        <div class="gio-hang-sp">
+                            <a href="./san-pham.html">
+                                <img src="./assets/images/sp/Pro_AV00181_1.jpeg" alt="">
+                            </a>
+                            <div class="gio-hang-price">
+                                <div class="gio-hang-price-left">
+                                    <h4>Pattas Tomo - Mule - Primrose Yellow</h4>
+                                    <p class="gio-hang-gia"><b>Giá:</b> 720.000 VND</p>
+                                    <div class="gio-hang-size">
+                                        <div class="gio-hang-size-btn">
+                                            <p>Size</p>
+                                            <div>39<i class="fa-solid fa-angle-down"></i></div>
+                                        </div>
+    
+                                        <div class="gio-hang-size-btn">
+                                            <p>Số lượng</p>
+                                            <div>1<i class="fa-solid fa-angle-down"></i></div>
+                                        </div>
+                                    </div>
+    
+                                </div>
+    
+                                <div class="gio-hang-price-right">
+                                    <h4>720.000 VND</h4>
+                                    <span>Còn hàng</span>
+                                    <div class="heart-btn">
+                                        <img src="./assets/images/gio-hang/Heart 2.svg" alt="">
+                                    </div>
+                                    <div class="heart-btn delete-btn">
+                                        <img src="./assets/images/gio-hang/Trash bin.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="bottom-gh">
+                        <span>XÓA HẾT</span>
+                        <a href="./product.html">TIẾP TỤC MUA HÀNG</a>
+                    </div>
+                </div>
+
+                <div class="gio-hang-right">
+                    <h3>ĐƠN HÀNG</h3>
+                    <div class="ma-khuyen-mai border-bot">
+                        <p>Nhập mã khuyễn mãi</p>
+                        <div class="input">
+                            <input type="text">
+                            <span class="input-btn">ÁP DỤNG</span>
+                        </div>
+                    </div>
+
+                    <div class="tinh-tien border-bot">
+                        <p>Đơn hàng <span>720.000 VND</span></p>
+                        <p>Giảm <span>216.000 VND</span></p>
+                    </div>
+
+                    <div class="tam-tinh">
+                        <p><b>TẠM TÍNH</b> <span>504.000 VND</span></p>
+                        <div class="xac-nhan-btn">
+                            TIẾP TỤC THANH TOÁN
+                        </div>
+                    </div>
+                </div>
+
+                
             </section>
+
+            
 
        </main>
 

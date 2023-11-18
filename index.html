@@ -5,11 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- nhúng google font roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-    <!-- reset css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <!-- nhúng font icon -->
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.4.2-web/css/all.min.css">
     <link rel="shortcut icon" href="./assets/images/Logo Ananas_Header.svg" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -40,7 +37,7 @@
             </li>
             <li class="nav-item">
                 <img src="./assets/images/header-navigation-svg/icon gio hang.svg" alt="icon giỏ hàng">
-                <p><a class="highlight" href="./gio-hang.html">Giỏ hàng (0)</a></p>
+                <p><a class="highlight" href="./gio-hang.html">Giỏ hàng (1)</a></p>
             </li>
         </ul>
     </div>
@@ -209,9 +206,30 @@
 
         <aside>
             <ul>
-                <li class="side-right side-cart">
-                    <span>0</span>
+                <li class="side-right side-cart" onclick="cartOnclick()">
+                    <span>1</span>
                     <img src="./assets/images/header-navigation-svg/icon gio hang.svg" alt="icon giỏ hàng">
+
+                    <div id="cart-onclick">
+                        <h4>Giỏ hàng (1)</h4>
+                        <div class="cart-sp">
+                            <img src="./assets/images/sp/Pro_AV00181_1.jpeg" alt="">
+                            <div class="cart-name">
+                                <p style="font-size: 13px; font-weight: 600;">PATTAS TOMO - MULE - PRIMROSE YELLOW</p>
+                                <p style="font-size: 12px;">720.000 VNĐ</p>
+                                <p class="small">Size: <span>39</span></p>
+                                <p class="small">Số lượng: <span>1</span></p>
+                            </div>
+                        </div>
+                        <div class="cart-price">
+                            <span>Tổng cộng</span>
+                            <span style="color: var(--main-color);">720.000 VNĐ</span>
+                        </div>
+                        <span class="cart-btn">THANH TOÁN</span>
+                        <span class="cart-btn cart-yeu-thich">THÊM VÀO YÊU THÍCH</span>
+                    </div>
+                    
+
                 </li>
                 <li class="side-right side-contact">
                     <div>
@@ -355,9 +373,7 @@
             </div>
         </section>
 
-        <div class="read-more">
-            <span style="color: white; cursor: pointer;" href="">MUỐN XEM NỮA</span>
-        </div>
+        <div onclick="readMoreClick()" id="read-more">MUỐN XEM NỮA</div>
 
    </main>
 

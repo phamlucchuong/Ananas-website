@@ -71,3 +71,22 @@ function toggleSlDropdown() {
         sizeDropdown.style.display = 'block';
     }
 }
+
+
+function cartOnclick(){
+    var readButton = document.getElementById('cart-onclick');
+    if (readButton.style.display === 'block') {
+        readButton.style.display = 'none';
+    } else {
+        readButton.style.display = 'block';
+    }
+}
+
+function readMoreClick(){
+    var readButton = document.getElementById('read-more');
+    if (readButton.style.display === 'block') {
+        readButton.style.display = 'none';
+    } else {
+        readButton.style.display = 'block';
+    }
+}

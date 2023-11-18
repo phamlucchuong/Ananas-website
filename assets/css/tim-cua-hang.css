@@ -98,24 +98,284 @@
 
 
 #yeu-thich{
-    text-align: center;
+    text-align: start;
     margin: 0 80px;
 }
 
 #yeu-thich h3{
     font-size: 28px;
-    padding: 15px 0 40px;
+    padding: 15px 0 20px;
+    text-align: center;
+}
+.how{
+    font-size: 15px;
+    color: #757575;
+    font-weight: 600;
+    padding-bottom: 15px;
     border-bottom: 2px solid black;
 }
-
+.sp-yeu-thich {
+    margin-top: -25px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid black;
+    display: flex;
+    /* justify-content: space-between; */
+}
+.sp-yeu-thich img{
+    width: 180px;
+    height: 180px;
+}
 #yeu-thich p{
     font-size: 16px;
     margin: 60px 0;
 }
-#yeu-thich a{
-    color: white;
-    font-size: 16px;
+.yeu-thich-text{
+    margin-left: 30px;
+    display: flex;
+    
+}
+.bottom-yeu-thich{
+    margin-top: 50px !important;
+}
+.yeu-thich-text-left{
+    width: 360px;
+}
+.yeu-thich-text-left h4{
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+.yeu-thich-text-left p{
+    margin: 0 !important;
+}
+.cost{
+    color: #757575;
+    font-size: 18px;
+}
+.cost span del{
+    margin-left: 40px;
+}
+
+.size-yeu-thich{
+    margin-top: 40px;
+}
+.size-yeu-thich p{
     font-weight: 600;
-    padding: 8px 30px;
+    margin-bottom: 20px !important;
+}
+
+.yeu-thich-gia{
+    margin-left: 485px !important;
+}
+
+#gio-hang-cua-ban{
+    margin: 30px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.gio-hang-left{
+    width: 770px;
+    height: 270px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid black;
+}
+.gio-hang-left h3{
+    font-size: 25px;
+    padding: 15px;
+    background-color: #F1F1F1;
+}
+.gio-hang-sp{
+    display: flex;
+}
+.gio-hang-sp img{
+    width: 180px;
+    height: 180px;
+}
+.gio-hang-price{
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.gio-hang-price-left{
+    width: 320px;
+}
+.gio-hang-price-left h4{
+    font-size: 20px;
+    margin: 0;
+    line-height: 1.3;
+}
+.gio-hang-gia{
+    font-size: 16px;
+    color: #7e7d7d;
+}
+.gio-hang-size{
+    display: flex;
+    justify-content: space-between;
+}
+.gio-hang-size-btn p{
+    font-size: 16px;
+}
+.gio-hang-size-btn div{
+    margin-top: -5px;
+    width: 120px;
+    height: 35px;
+    border: 1px solid #9e9e9e;
+    font-size: 16px;
+    position: relative;
+    padding-left: 10px;
+    line-height: 35px;
+    cursor: pointer;
+}
+.gio-hang-size-btn div i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.gio-hang-price-right{
+    text-align: end;
+    margin-left: 120px;
+}
+.gio-hang-price-right h4{
+    margin: 0;
+    font-size: 20px;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+.gio-hang-price-right span{
+    font-size: 16px;
+    color: var(--main-color);
+}
+.heart-btn{
+    margin-top: 21px;
+    width: 125px;
+    height: 40px;
+    border: 1px solid #808080;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+.heart-btn img{
+    width: 20px;
+    height: 18px;
+}
+.delete-btn{
     background-color: #303030;
+}
+.heart-btn:active{
+    opacity: 0.5;
+}
+
+.gio-hang-right{
+    padding: 0 25px;
+    margin-top: 25px;
+    width: 380px;
+    margin-left: 40px;
+    background-color: #F1F1F1;
+}
+.gio-hang-right h3{
+    margin-top: 10px;
+    font-size: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+
+.ma-khuyen-mai{
+    margin-top: 30px;
+}
+.ma-khuyen-mai p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.input{
+    width: 100%;
+    display: flex;
+}
+.input input{
+    border: 1px solid #bdbdbd;
+    height: 35px;
+    width: 220px;
+    padding-left: 15px;
+}
+.input-btn{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    width: calc(100% - 220px);
+    height: 40px;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+.input-btn:active{
+    opacity: 0.5;
+}
+
+.border-bot{
+    padding-bottom: 30px;
+    border-bottom: 2px dashed #707070;
+}
+.tinh-tien{
+    padding: 25px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #616161;
+}
+.tinh-tien p{
+    position: relative;
+}
+.tinh-tien span{
+    position: absolute;
+    right: 15px;
+}
+
+.tam-tinh{
+    padding: 20px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+.tam-tinh p{
+    position: relative;
+}
+.tam-tinh span{
+    position: absolute;
+    right: 15px;
+}
+.xac-nhan-btn{
+    width: 100%;
+    height: 80px;
+    background-color: var(--main-color);
+    line-height: 80px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    margin-top: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.xac-nhan-btn:active{
+    opacity: 0.5;
+}
+
+.bottom-gh{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-gh span, .bottom-gh a{
+    display: inline-block;
+    width: 250px;
+    height: 50px;
+    background-color: #3C3C3C;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+.bottom-gh span:active, .bottom-gh a:active{
+    opacity: 0.5;
 }
