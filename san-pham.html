@@ -211,7 +211,7 @@
 
             <aside>
                 <ul>
-                    <li class="side-right side-cart" onclick="cartOnclick()">
+                    <li class="side-right side-cart" onclick="toggleDropdown('cart-onclick')">
                         <span>1</span>
                         <img src="./assets/images/header-navigation-svg/icon gio hang.svg" alt="icon giỏ hàng">
     
@@ -230,8 +230,8 @@
                                 <span>Tổng cộng</span>
                                 <span style="color: var(--main-color);">720.000 VNĐ</span>
                             </div>
-                            <span class="cart-btn">THANH TOÁN</span>
-                            <span class="cart-btn cart-yeu-thich">THÊM VÀO YÊU THÍCH</span>
+                            <a href="./gio-hang.html" class="cart-btn">THANH TOÁN</a>
+                            <a href="./yeu-thich.html" class="cart-btn cart-yeu-thich">THÊM VÀO YÊU THÍCH</a>
                         </div>
                         
     
@@ -296,53 +296,33 @@
                             <div id="size-sl">
                                 <div class="size">
                                     <p>SIZE</p>
-                                    <div onclick="toggleSizeDropdown()" class="size-btn">
+                                    <div onclick="toggleDropdown('sizeDropdown')" class="size-btn">
+                                        <p id="pick_Size"></p>
                                         <i class="fa-solid fa-angle-down"></i>
                                     </div>
 
                                     <div id="sizeDropdown" class="size-dropdown">
                                         <ul>
-                                            <li>1</li>
-                                            <li>2</li>
-                                            <li>3</li>
-                                            <li>4</li>
-                                            <li>5</li>
-                                            <li>6</li>
-                                            <li>7</li>
-                                            <li>8</li>
-                                            <li>9</li>
-                                            <li>10</li>
-                                            <li>11</li>
-                                            <li>12</li>
+                                            <li onclick="chonSize(36,'pick_Size')">36</li>
+                                            <li onclick="chonSize(37,'pick_Size')">37</li>
+                                            <li onclick="chonSize(38,'pick_Size')">38</li>
+                                            <li onclick="chonSize(39,'pick_Size')">39</li>
+                                            <li onclick="chonSize(40,'pick_Size')">40</li>
+                                            <li onclick="chonSize(41,'pick_Size')">41</li>
+                                            <li onclick="chonSize(42,'pick_Size')">42</li>
+                                            <li onclick="chonSize(43,'pick_Size')">43</li>
+                                            <li onclick="chonSize(44,'pick_Size')">44</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="size">
                                     <p>SỐ LƯỢNG</p>
-                                    <div onclick="toggleSlDropdown()" class="size-btn">
-                                        <i class="fa-solid fa-angle-down"></i>
-                                    </div>
-                                    <div id="slDropdown" class="size-dropdown">
-                                        <ul>
-                                            <li>1</li>
-                                            <li>2</li>
-                                            <li>3</li>
-                                            <li>4</li>
-                                            <li>5</li>
-                                            <li>6</li>
-                                            <li>7</li>
-                                            <li>8</li>
-                                            <li>9</li>
-                                            <li>10</li>
-                                            <li>11</li>
-                                            <li>12</li>
-                                        </ul>
-                                    </div>
+                                    <input id="inputSl" class="size-btn"></input>
                                 </div>
                             </div>
 
                             <div id="sp-add">
-                                <span id="sp-add-left">THÊM VÀO GIỎ HÀNG</span>
+                                <span onclick="inputSoLuong('inputSl'), themGioHang()" id="sp-add-left">THÊM VÀO GIỎ HÀNG</span>
                                 <img id="sp-add-right" src="./assets/images/san-pham/Heart product 1.svg" alt="">
                             </div>
 

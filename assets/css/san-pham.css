@@ -74,6 +74,15 @@
     border: 1px solid #a8a8a8;
     cursor: pointer;
 }
+#pick_Size{
+    font-weight: 500;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+#inputSl{
+    padding-left: 10px;
+    font-size: 16px;
+}
 .size-btn i{
     font-size: 16px;
     position: absolute;
@@ -215,3 +224,16 @@
 .item-name:hover{
     color: var(--main-color);
 }
+
+#size-thanh-toan{
+    margin-top: 0;
+}
+#doi-so-luong{
+    margin-top: -5px;
+    width: 120px;
+    height: 33px;
+    border: 1px solid #757575;
+    padding-left: 10px;
+    font-size: 16px;
+}
+

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.4.2-web/css/all.min.css">
     <link rel="shortcut icon" href="./assets/images/Logo Ananas_Header.svg" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/san-pham.css">
     <link rel="stylesheet" href="./assets/css/tim-cua-hang.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <script src="./assets/javascript/main.js"></script>
@@ -211,7 +212,7 @@
 
             <aside>
                 <ul>
-                    <li class="side-right side-cart" onclick="cartOnclick()">
+                    <li class="side-right side-cart" onclick="toggleDropdown('cart-onclick')">
                         <span>1</span>
                         <img src="./assets/images/header-navigation-svg/icon gio hang.svg" alt="icon giỏ hàng">
     
@@ -230,8 +231,8 @@
                                 <span>Tổng cộng</span>
                                 <span style="color: var(--main-color);">720.000 VNĐ</span>
                             </div>
-                            <span class="cart-btn">THANH TOÁN</span>
-                            <span class="cart-btn cart-yeu-thich">THÊM VÀO YÊU THÍCH</span>
+                            <a href="./gio-hang.html" class="cart-btn">THANH TOÁN</a>
+                            <a href="./yeu-thich.html" class="cart-btn cart-yeu-thich">THÊM VÀO YÊU THÍCH</a>
                         </div>
                     </li>
                     
@@ -273,12 +274,28 @@
                                     <div class="gio-hang-size">
                                         <div class="gio-hang-size-btn">
                                             <p>Size</p>
-                                            <div>39<i class="fa-solid fa-angle-down"></i></div>
+                                            <div onclick="toggleDropdown('sizeDropdown')">
+                                                <p id="size-thanh-toan">39</p>
+                                                <i class="fa-solid fa-angle-down"></i>
+                                                <div id="sizeDropdown" class="size-dropdown">
+                                                    <ul>
+                                                        <li onclick="chonSize(36,'size-thanh-toan')">36</li>
+                                                        <li onclick="chonSize(37,'size-thanh-toan')">37</li>
+                                                        <li onclick="chonSize(38,'size-thanh-toan')">38</li>
+                                                        <li onclick="chonSize(39,'size-thanh-toan')">39</li>
+                                                        <li onclick="chonSize(40,'size-thanh-toan')">40</li>
+                                                        <li onclick="chonSize(41,'size-thanh-toan')">41</li>
+                                                        <li onclick="chonSize(42,'size-thanh-toan')">42</li>
+                                                        <li onclick="chonSize(43,'size-thanh-toan')">43</li>
+                                                        <li onclick="chonSize(44,'size-thanh-toan')">44</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
     
                                         <div class="gio-hang-size-btn">
                                             <p>Số lượng</p>
-                                            <div>1<i class="fa-solid fa-angle-down"></i></div>
+                                            <input onclick="anSoLuong()"" id="doi-so-luong" value="1"></input>
                                         </div>
                                     </div>
     
@@ -299,7 +316,7 @@
                     </div>
     
                     <div class="bottom-gh">
-                        <span>XÓA HẾT</span>
+                        <span onclick="resetGioHang()">XÓA HẾT</span>
                         <a href="./product.html">TIẾP TỤC MUA HÀNG</a>
                     </div>
                 </div>
@@ -321,7 +338,7 @@
 
                     <div class="tam-tinh">
                         <p><b>TẠM TÍNH</b> <span>504.000 VND</span></p>
-                        <div class="xac-nhan-btn">
+                        <div onclick="tttt()" class="xac-nhan-btn">
                             TIẾP TỤC THANH TOÁN
                         </div>
                     </div>
