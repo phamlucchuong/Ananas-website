@@ -328,20 +328,48 @@
 
                             <p id="thanh-toan">THANH TOÁN</p>
 
-                            <p id="thong-tin">THÔNG TIN SẢN PHẨM 
+                            <div onclick="toggleDropdown('ttsp'), doiMau('thong-tin', 'ttsp')">
+                                <p id="thong-tin">THÔNG TIN SẢN PHẨM 
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </p>
+                            </div>
+                            <div class="thong-tin-active" id="ttsp">
+                                <p>Gender: Unisex </p>
+                                <p>Size run: 35 – 46</p>   
+                                <p>Upper: Canvas NE</p>  
+                                <p>Outsole: Rubber</p>
+                                <img src="./assets/images/sp/Ananas_SizeChart.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="sp-p" onclick="toggleDropdown('doi-san-pham'), doiMau('dsp', 'doi-san-pham')">
+                            <p id="dsp" class="t-t">QUY ĐỊNH ĐỔI SẢN PHẨM
+                            <i class="fa-solid fa-angle-down"></i>
+                            </p>
+                        </div>
+                        <ul class="thong-tin-active sp-p" id="doi-san-pham">
+                            <li>Chỉ đổi hàng 1 lần duy nhất, mong bạn cân nhắc kĩ trước khi quyết định.</li>
+                            <li>Thời hạn đổi sản phẩm khi mua trực tiếp tại cửa hàng là 07 ngày, kể từ ngày mua. Đổi sản phẩm khi mua online là 14 ngày, kể từ ngày nhận hàng.</li>
+                            <li>Sản phẩm đổi phải kèm hóa đơn. Bắt buộc phải còn nguyên tem, hộp, nhãn mác.</li>
+                            <li>Sản phẩm đổi không có dấu hiệu đã qua sử dụng, không giặt tẩy, bám bẩn, biến dạng.</li>
+                            <li>Ananas chỉ ưu tiên hỗ trợ đổi size. Trong trường hợp sản phẩm hết size cần đổi, bạn có thể đổi sang 01 sản phẩm khác:
+                                - Nếu sản phẩm muốn đổi ngang giá trị hoặc có giá trị cao hơn, bạn sẽ cần bù khoảng chênh lệch tại thời điểm đổi (nếu có).
+                                - Nếu bạn mong muốn đổi sản phẩm có giá trị thấp hơn, chúng tôi sẽ không hoàn lại tiền.</li>
+                            <li>Trong trường hợp sản phẩm - size bạn muốn đổi không còn hàng trong hệ thống. Vui lòng chọn sản phẩm khác.</li>
+                            <li>Không hoàn trả bằng tiền mặt dù bất cứ trong trường hợp nào. Mong bạn thông cảm.</li>
+                        </ul>
+
+
+                        <div class="sp-p" onclick="toggleDropdown('bao-hanh'), doiMau('bhtn', 'bao-hanh')">
+                            <p id="bhtn" class="t-t">BẢO HÀNH THẾ NÀO ? 
                                 <i class="fa-solid fa-angle-down"></i>
                             </p>
                         </div>
-
-                        <div class="sp-p">
-                            <p class="t-t">QUY ĐỊNH ĐỔI SẢN PHẨM
-                            <i class="fa-solid fa-angle-down"></i>
-                            </p>
-                        </div>
-                        <div class="sp-p">
-                            <p class="t-t">BẢO HÀNH THẾ NÀO ? 
-                            <i class="fa-solid fa-angle-down"></i>
-                            </p>
+                        <div class="thong-tin-active sp-p" id="bao-hanh">
+                            <p>Mỗi đôi giày Ananas trước khi xuất xưởng đều trải qua nhiều khâu kiểm tra. Tuy vậy, trong quá trình sử dụng, nếu nhận thấy các lỗi: gãy đế, hở đế, đứt chỉ may,...trong thời gian 6 tháng từ ngày mua hàng, mong bạn sớm gửi sản phẩm về Ananas nhằm giúp chúng tôi có cơ hội phục vụ bạn tốt hơn. Vui lòng gửi sản phẩm về bất kỳ cửa hàng Ananas nào, hoặc gửi đến trung tâm bảo hành Ananas ngay trong trung tâm TP.HCM trong giờ hành chính:
+                               <br>
+                                Địa chỉ: 5C Tân Cảng, P.25, Q.Bình Thạnh , TP. Hồ Chí Minh.
+                                Hotline: 028 2211 0067</p>
                         </div>
                     </div>
                 </div>
@@ -357,7 +385,7 @@
                                 <a href="./san-pham-2.html"><img class="item-img base" src="./assets/images/san-pham/Pro_AV00098_1.jpg" alt=""></a>
                             </div>
                             <div class="caption">
-                                <a href=""><p class="item-name">Basas Bumper Gum EXT NE - Low Top</p></a>
+                                <a href="./san-pham-2.html"><p class="item-name">Basas Bumper Gum EXT NE - Low Top</p></a>
                                 <p class="item-album">Black/Gum</p>
                                 <p class="item-price">580.000 VND</p>
                             </div>
@@ -370,7 +398,7 @@
                                 <a href="./san-pham-2.html"><img class="item-img base" src="./assets/images/san-pham/Pro_AV00098_1.jpg" alt=""></a>
                             </div>
                             <div class="caption">
-                                <a href=""><p class="item-name">Basas Bumper Gum EXT NE - Low Top</p></a>
+                                <a href="./san-pham-2.html"><p class="item-name">Basas Bumper Gum EXT NE - Low Top</p></a>
                                 <p class="item-album">Black/Gum</p>
                                 <p class="item-price">580.000 VND</p>
                             </div>
@@ -383,7 +411,7 @@
                                 <a href="./san-pham-2.html"><img class="item-img base" src="./assets/images/san-pham/Pro_AV00098_1.jpg" alt=""></a>
                             </div>
                             <div class="caption">
-                                <a href=""><p class="item-name">Basas Bumper Gum EXT NE - Low Top</p></a>
+                                <a href="./san-pham-2.html"><p class="item-name">Basas Bumper Gum EXT NE - Low Top</p></a>
                                 <p class="item-album">Black/Gum</p>
                                 <p class="item-price">580.000 VND</p>
                             </div>
@@ -396,7 +424,7 @@
                                 <a href="./san-pham-2.html"><img class="item-img base" src="./assets/images/san-pham/Pro_AV00098_1.jpg" alt=""></a>
                             </div>
                             <div class="caption">
-                                <a href=""><p class="item-name">Basas Bumper Gum EXT NE - Low Top</p></a>
+                                <a href="./san-pham-2.html"><p class="item-name">Basas Bumper Gum EXT NE - Low Top</p></a>
                                 <p class="item-album">Black/Gum</p>
                                 <p class="item-price">580.000 VND</p>
                             </div>

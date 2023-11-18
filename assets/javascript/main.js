@@ -139,3 +139,23 @@ function themGioHang(){
         alert('Vui lòng chọn Size và số lượng!');
     }
 }
+
+function doiMau(id,id2){
+    var color = "#F15E2D";
+    var text = document.getElementById(id);
+    var active = document.getElementById(id2);
+    if(active.style.display == 'none'){
+        text.style.color = 'black';
+    } else {
+        text.style.color = color;
+    }
+}
+
+function yeuThichSp(){
+    var heart = document.getElementById('heartTest');
+    if(heart.src == './assets/images/gio-hang/Heart 2.svg'){
+        heart.src = './assets/images/san-pham/Heart product 1.svg';
+    } else {
+        heart.src = './assets/images/gio-hang/Heart 2.svg';
+    }
+}
